@@ -29,6 +29,19 @@ namespace examples
             Console.WriteLine(p1.gettutorial());
 
 
+            // calling constructor example 
+             
+            employee p2 = new employee();
+            p2.setemployeedetails(007, "James");
+            Console.WriteLine(p2.getemployeename());
+
+            employee p3 = new employee();
+            Console.WriteLine(p3.getemployeename());    // this gives us default name since we have new p3 instance of class and without setting id and 
+                                                        // name we are directly calling its method getemployeename so it will print default values assigned
+                                                        // to properties in consstructor basically constructor is initializing properties 
+
+
+
         }
     }
 }
